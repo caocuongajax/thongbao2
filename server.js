@@ -3,8 +3,9 @@ var io = require('socket.io')(app);
 var fs = require('fs');
 
 var connectionsArray = [];
+var port = Number(process.env.PORT || 4000);
 
-app.listen(4000);
+app.listen(port);
 
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html',
