@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "CaoCuong <bcc2qm@yahoo.com>",
-  "license": "ISC",
+  "license": "BCL",
   "dependencies": {
     "socket.io": "1.3.5",
     "express": "4.12.3"
