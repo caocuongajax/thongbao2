@@ -22,7 +22,7 @@ function handler (req, res) {
 
 io.on('connection', function (socket) {
   connectionsArray.push(socket);
-  socket.volatile.emit('info', socket);
+  socket.emit('info', {thongtin: socket});
   socket.on('disconnect', function () {
     var socketIndex = connectionsArray.indexOf(socket);
     if (socketIndex >= 0) {
